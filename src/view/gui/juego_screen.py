@@ -19,7 +19,7 @@ class JuegoScreen(Screen):
             alto = int(self.ids.alto_input.text)
             num_naves = int(self.ids.naves_input.text)
             self.controlador.iniciar_juego(ancho, alto, num_naves)
-            self.mensaje = "Juego iniciado. ¡Buena suerte!"
+            self.mensaje = "Juego iniciado. ¡¡Buena suerte!!"
         except ValueError:
             self.mensaje = "❌ Entrada inválida. Usa números enteros."
 
