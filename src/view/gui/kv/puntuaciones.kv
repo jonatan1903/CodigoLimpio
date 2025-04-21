@@ -1,0 +1,20 @@
+<PuntuacionesScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        padding: 20
+        spacing: 15
+
+        Label:
+            text: "Puntuaciones"
+            font_size: 28
+
+        ScrollView:
+            Label:
+                text: root.puntuaciones
+                size_hint_y: None
+                height: self.texture_size[1]
+                text_size: self.width, None
+
+        Button:
+            text: "Volver al Menú"
+            on_release: root.volver()

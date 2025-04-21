@@ -31,7 +31,6 @@
   "src/tests/test_jugador.py::test_cambiar_contraseña": true,
   "src/tests/test_campo.py::test_creacion_campo_dimensiones": true,
   "src/tests/test_campo.py::test_celdas_inicializadas": true,
-  "tests/test_celda.py::test_disparo_en_celda_con_nave": true,
   "tests/test_jugador.py::test_realizar_disparo": true,
   "tests/test_jugador.py::test_contraseña_extremadamente_larga": true,
   "tests/test_jugador.py::test_coordenadas_disparo_fuera_rango": true,

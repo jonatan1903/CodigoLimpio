@@ -1,0 +1,36 @@
+<RegistroScreen>:
+    usuario_input: usuario
+    contrasena_input: contraseña
+    BoxLayout:
+        orientation: "vertical"
+        padding: 20
+        spacing: 15
+
+        Label:
+            text: "Registro de Usuario"
+            font_size: 28
+            size_hint_y: 0.2
+
+        TextInput:
+            id: usuario
+            hint_text: "Nombre de usuario"
+            multiline: False
+
+        TextInput:
+            id: contraseña
+            hint_text: "Contraseña"
+            multiline: False
+            password: True
+
+        Label:
+            text: root.mensaje
+            color: 1, 0, 0, 1 if "Error" in root.mensaje else (0, 1, 0, 1)
+            font_size: 16
+
+        Button:
+            text: "Registrar"
+            on_release: root.registrar()
+
+        Button:
+            text: "Volver al Menú"
+            on_release: root.volver()

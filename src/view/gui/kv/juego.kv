@@ -1,0 +1,51 @@
+<JuegoScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        padding: 20
+        spacing: 15
+
+        Label:
+            text: "Juego de Batalla Naval"
+            font_size: 28
+
+        TextInput:
+            id: ancho_input
+            hint_text: "Ancho del tablero"
+            multiline: False
+
+        TextInput:
+            id: alto_input
+            hint_text: "Alto del tablero"
+            multiline: False
+
+        TextInput:
+            id: naves_input
+            hint_text: "Número de naves"
+            multiline: False
+
+        Button:
+            text: "Iniciar Juego"
+            on_release: root.iniciar_juego()
+
+        TextInput:
+            id: fila_input
+            hint_text: "Fila del disparo"
+            multiline: False
+
+        TextInput:
+            id: columna_input
+            hint_text: "Columna del disparo"
+            multiline: False
+
+        Button:
+            text: "Realizar Disparo"
+            on_release: root.realizar_disparo()
+
+        Label:
+            text: root.mensaje
+            color: 1, 0, 0, 1 if "❌" in root.mensaje else (0, 1, 0, 1)
+            font_size: 16
+
+        Button:
+            text: "Volver al Menú"
+            on_release: root.volver()
